@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find f110_simulator)/launch/simulator.launch"/>
+    <node pkg="wall_reactive" type="reactive_gap_follow" name="reactive_gap_follow" />
+</launch>
+
