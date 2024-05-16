@@ -124,11 +124,11 @@ public:
   double get_speed(float steering_angle)
   { 
     if ((abs(steering_angle) >= 0) && (abs(steering_angle) < 0.1)){
-      speed = 1.0; //2.5, 3.5, 4.5
-    } else if ((abs(steering_angle) >= 0.1) && (abs(steering_angle) < 0.2)){ //0.349066
-      speed = 1.0; //1.5, 2.5, 3.5
+      speed = 1.0;
+    } else if ((abs(steering_angle) >= 0.1) && (abs(steering_angle) < 0.15)){
+      speed = 1.0;
     } else{
-      speed = 1.0; //0.5, 1.5, 2.0
+      speed = 1.0; 
     }
     return speed;
   }
